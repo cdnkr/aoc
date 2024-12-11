@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOC 2024: Day 4 - Part 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        ::-webkit-scrollbar {
+            height: 5px;
+            width: 5px
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3)
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: hsla(0, 0%, 100%, .3);
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5)
+        }
+
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background: hsla(0, 0%, 100%, .3)
+        }
+
+        .glow {
+            color: #ffffff40 !important;
+            text-shadow:
+                0 0 2.5px #ea3142,
+                0 0 5px #ea3142,
+                0 0 10px #ea3142,
+                0 0 20px #ea3142,
+                0 0 40px #ea3142,
+                0 0 45px #ea3142,
+                0 0 50px #ea3142,
+                0 0 75px #ea3142;
+        }
+
+        .glow-gold {
+            color: #ffffff !important;
+            text-shadow:
+                0 0 2.5px #cba122,
+                0 0 5px #cba122,
+                0 0 10px #cba122,
+                0 0 20px #cba122,
+                0 0 40px #cba122,
+                0 0 45px #cba122,
+                0 0 50px #cba122,
+                0 0 75px #cba122;
+        }
+
+        .neon {
+            color: #fff;
+            text-shadow:
+                0 0 2.5px #fff,
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #0ff,
+                0 0 40px #0ff,
+                0 0 45px #0ff,
+                0 0 50px #0ff,
+                0 0 75px #0ff;
+        }
+
+        .underline {
+            text-decoration: none !important;
+        }
+
+        .underline:hover {
+            text-decoration: underline !important;
+            text-decoration-style: wavy !important;
+        }
+    </style>
+</head>
+
+<body class="bg-black relative">
+    <div id="input" class="w-full flex flex-col gap-2 relative">
+        <div
+            class="fixed block bottom-12 left-2 lg:left-[calc(50%-104px)] rounded-xl inline-flex items-center gap-4 text-gray-300 text-5xl  px-8 py-6">
+            <span id="totalCount" class="hidden neon">0</span>
+            <span id="totalCountLabel" class="hidden font-light text-5xl neon">XMAS</span>
+
+            <span id="start" class="font-light text-5xl neon underline cursor-pointer">Start</span>
+
+        </div>
+
+        <div
+            class="fixed block top-4 right-4 rounded-xl inline-flex items-center gap-4 text-gray-300 text-5xl">
+            <a href="pattern.html" class="font-light text-xl glow-gold underline cursor-pointer">Part 2 →</a>
+        </div>
+    </div>
+    <script src="input.js"></script>
+    <script src="word.js"></script>
+</body>
+
+</html>
